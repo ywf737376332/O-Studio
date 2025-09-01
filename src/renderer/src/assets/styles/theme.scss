@@ -1,0 +1,133 @@
+:root {
+    --main-background-color: #FFFFFF; // 主背景色 #1E1E1E
+    --main-border-color: hsla(0, 0%, 83%, 0.5); // 主边框色
+    --main-left-sider-background-color: #2E2E2E; // #f3f0f0     // 左侧边栏底色
+    --main-menu-active-color: #07c160; // #07c160; #409EFF            // 活动菜单颜色
+    --main-header-tagsview-background-color: #FFF;
+    --main-header-tagsview-font-color: #515151;
+    --main-btn-background-color: #f3f3f3;
+    --main-btn-font-color: #515151;
+    --main-btn-active-color: #e3e3e3;
+
+    --main-win-btn-active-color: #ddd;
+    --main-win-btn-font-color: #515151;
+    --main-win-close-btn-active-color: #E81123;
+    --main-win-close-btn-active-font-color: #FFF;
+    --main-win-top-btn-color: #07c160;
+    --main-win-top-active-color: #ddd;
+
+    --main-scrollbar-background-color: hsla(#fff, 0);
+    --main-scrollbar-bar-color: #EFEFEF;
+    --main-scrollbar-bar-color-active: #bfbfbf;
+    --main-input-font-active: hsla(#919295, 0.3);
+
+    --main-input-label-font-color: #515151;
+    --main-input-background-color: #E5E6EB;
+    --main-input-focus-border-color: #7BBCFF;
+    --main-input-active-color: #C9CDD4;
+    --main-input-focus-color: #FFF;
+
+    --main-tip-border-color: #ccc;
+    --main-tip-background-color: #f3f3f3;
+
+    --main-state-bar-font-color: #6a6a6a;
+    --main-state-bar-type-font-color: #07c160;
+
+    --main-select-label-color: #f3f3f3;
+    --main-select-label-border-color: #ccc; // 主边框色
+
+    --main-popover-border-color: #ccc; // 主边框色
+    --main-popover-title-border-color: #f3f3f3; // 主边框色
+
+    --main-dashed-border-color: #ccc; // 虚线边框
+    --main-color-pick-border-color: #ccc; // 颜色选择器边框
+
+    --main-theme-sider-background-color: #2E2E2E; // #f3f0f0     // 左侧边栏底色
+    --main-theme-header-background-color: #FFF; // #f3f0f0     // 左侧边栏底色
+    --main-theme-content-background-color: #FFF; // #f3f0f0     // 左侧边栏底色
+    --main-theme-background-color: rgba(240, 240, 240);
+    --main-theme-border-h-shadow: rgba(112, 112, 112, 0.22);
+    --main-theme-border-v-shadow: rgba(118, 118, 118, 0.34);
+    --main-theme-title-background-color: hsla(0, 0%, 75%, 0.2);
+    --main-theme-festival-date-label-background-color: hsla(0, 0%, 75%, 0.2);
+    --main-theme-export-text-image-background-color:#FFF;                    // 导出图片和复制图片的背景色
+    
+
+    /**json树组件配色**/
+    --json-key-color: #810CA8;
+    --json-value-color: #0078D4;
+    --json-value-string-color: #008000;
+    --json-value-number-color: #ff69b4;
+    --json-value-boolean-color: #eb9f3a;
+    --json-value-other-color: #808080;
+    --json-value-brackets-color: #515151;
+
+
+}
+
+[data-theme="dark"] {
+    --main-background-color: #1e1e1e; // 主背景色 #1E1E1E
+    --main-border-color: #333333; // 主边框色
+    --main-left-sider-background-color: #333333; // #f3f0f0     // 左侧边栏底色
+    --main-menu-active-color: #07c160; // #07c160; #409EFF            // 活动菜单颜色
+    --main-header-tagsview-background-color: #333333;
+    --main-header-tagsview-font-color: #c5c5c5;
+    --main-btn-background-color: #2D2D2D;
+    --main-btn-font-color: #c5c5c5;
+    --main-btn-active-color: #393939;
+
+    --main-win-btn-active-color: #4e4e4e;
+    --main-win-btn-font-color: #c5c5c5;
+    --main-win-close-btn-active-color: #E81123;
+    --main-win-close-btn-active-font-color: #FFF;
+    --main-win-top-btn-color: #07c160;
+    --main-win-top-active-color: #252525;
+
+    --main-scrollbar-background-color: hsla(#fff, 0);
+    --main-scrollbar-bar-color: #535353;
+    --main-scrollbar-bar-color-active: #7B7B7C;
+
+    --main-input-font-active: hsla(#919295, 0.3);
+
+    --main-input-label-font-color: #c5c5c5;
+    --main-input-background-color: #333333;
+    --main-input-focus-border-color: #7BBCFF;
+    --main-input-active-color: #252525;
+    --main-input-focus-color: rgba(#919295, .3);
+
+    --main-tip-border-color: #535252;
+    --main-tip-background-color: #2E2E2E;
+
+    --main-state-bar-font-color: #c5c5c5;
+    --main-state-bar-type-font-color: #07c160;
+
+
+    --main-select-label-color: #2D2D2D;
+    --main-select-label-border-color: #535252; // 主边框色
+
+    --main-popover-border-color: #535252; // 主边框色
+    --main-popover-title-border-color: #2D2D2D; // 主边框色
+
+    --main-dashed-border-color: #535252;
+    --main-color-pick-border-color: #535252; // 颜色选择器边框
+
+    --main-theme-sider-background-color: #2E2E2E; // #f3f0f0     // 左侧边栏底色
+    --main-theme-header-background-color: #2E2E2E; // #f3f0f0     // 左侧边栏底色
+    --main-theme-content-background-color: #FFF; // #f3f0f0     // 左侧边栏底色
+    --main-theme-background-color: rgb(222, 222, 222);
+    --main-theme-border-h-shadow: rgba(255, 255, 255, 0.22);
+    --main-theme-border-v-shadow: rgba(255, 255, 255, 0.34);
+    --main-theme-title-background-color: hsla(0, 0%, 9%, 0.2);
+    --main-theme-festival-date-label-background-color: hsla(0, 0%, 41%, 0.2);
+    --main-theme-export-text-image-background-color:#1C1C1C;                    // 导出图片和复制图片的背景色
+
+    /**json树组件配色**/
+    --json-key-color: #48b685;
+    --json-value-color: #0078D4;
+    --json-value-string-color: #fec418;
+    --json-value-number-color: #0078D4;
+    --json-value-boolean-color: #c85e7c;
+    --json-value-other-color: #808080;
+    --json-value-brackets-color: #c5c5c5;
+
+}

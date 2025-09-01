@@ -1,0 +1,111 @@
+{
+  "name": "O-Studio-1.0",
+  "version": "1.0.0",
+  "description": "这是一个程序员工具箱",
+  "homepage": "https://gitee.com/yufei88/O-Studio.git",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "postinstall": "electron-builder install-app-deps",
+    "build:unpack": "npm run build && electron-builder --dir",
+    "build:win": "npm run build && electron-builder --win",
+    "build:mac": "npm run build && electron-builder --mac",
+    "build:linux": "npm run build && electron-builder --linux"
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/utils": "^3.0.0",
+    "auto-launch": "^5.0.6",
+    "axios": "^1.7.9",
+    "electron-log": "^5.3.0",
+    "electron-store": "7.0.2",
+    "electron-updater": "^6.1.7",
+    "element-plus": "^2.8.6",
+    "html2canvas": "^1.4.1",
+    "js-beautify": "^1.15.1",
+    "js-yaml": "^4.1.0",
+    "jsqr": "^1.4.0",
+    "lunar-javascript": "^1.7.0",
+    "monaco-editor": "^0.52.0",
+    "node-schedule": "^2.1.1",
+    "pako": "^2.1.0",
+    "pinia": "^2.2.6",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.33.5",
+    "splitpanes": "^3.1.5",
+    "sql-formatter": "^15.4.6",
+    "vue-json-pretty": "^2.4.0",
+    "vue-router": "^4.4.5",
+    "vuedraggable": "^4.1.0",
+    "xml-formatter": "^3.6.3",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@electron-toolkit/eslint-config": "^1.0.2",
+    "@rushstack/eslint-patch": "^1.10.3",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "electron": "^31.0.2",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "less": "^4.2.0",
+    "prettier": "^3.3.2",
+    "sass": "1.32.13",
+    "sass-loader": "10.1.1",
+    "vite": "^5.3.1",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "vue": "^3.4.30"
+  },
+  "build": {
+    "appId": "com.ywf.o.studio.app",
+    "productName": "O-Studio",
+    "copyright": "Copyright © 2024 ${author}",
+    "directories": {
+      "output": "dist",
+      "buildResources": "resources"
+    },
+    "files": [
+      "resources/**/*",
+      "out/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "resources/icon.ico"
+    },
+    "mac": {
+      "icon": "resources/icon.icns"
+    },
+    "linux": {
+      "icon": "resources/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "O-Studio"
+    },
+    "asar": true
+  },
+  "repository": "https://gitee.com/yufei88/O-Studio.git",
+  "author": "莫斐鱼",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

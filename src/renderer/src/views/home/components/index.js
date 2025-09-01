@@ -1,0 +1,7 @@
+export { default as Statistics } from './Statistics/index.vue'
+export { default as GreatQuotes } from './GreatQuotes/index.vue'
+export { default as TodayFestival } from './TodayFestival/index.vue'
+export { default as TimerView } from './TimerView/index.vue'
+export { default as FutureHolidays } from './FutureHolidays/index.vue'
+export { default as OftenUseFunc } from './OftenUseFunc/index.vue'
+export { default as NewsView } from './NewsView/index.vue'
