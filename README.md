@@ -4,7 +4,7 @@
 
 ## 技术架构
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- Electron + Vue3 + Pinia + Monaco-Editor + Vite
 
 ## 项目启动，打包
 
